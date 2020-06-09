@@ -19,13 +19,13 @@ class User(models.Model):
 class Plan(models.Model):
     """ plan Model"""
 
-    plan_type = models.CharField(max_length=100)
-    name = models.EmailField(max_length=254)
+    name = models.CharField(max_length=100)
+    # type = models.CharField(max_length=100)
     cost = models.IntegerField()
-    annual_discount = models.BooleanField()
+    annual_discount = models.IntegerField()
 
     def ___str___(self):
-        return self.plan_type
+        return self.name
 
 
 # Subscription

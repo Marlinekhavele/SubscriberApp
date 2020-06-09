@@ -34,7 +34,7 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
     queryset = models.Subscription.objects.all()
 
 
-class TransactionSet(viewsets.ModelViewSet):
+class TransactionViewSet(viewsets.ModelViewSet):
     """Handles Listing transactions."""
 
     serializer_class = serializers.TransactionSerializer

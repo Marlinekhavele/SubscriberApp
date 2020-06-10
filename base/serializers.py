@@ -26,6 +26,7 @@ class SubscriptionSerializer(serializers.ModelSerializer):
         fields = (
             "id",
             "name",
+            "user",
             "created_at",
             "updated_at",
         )

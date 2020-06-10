@@ -35,7 +35,7 @@ class Subscription(models.Model):
     name = models.CharField(max_length=100)
 
     user = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="subscription_user"
+        User, on_delete=models.CASCADE, related_name="user"
     )
     created_at = models.DateTimeField(auto_now_add=True, editable=False)
     updated_at = models.DateTimeField(auto_now=True, editable=False)
